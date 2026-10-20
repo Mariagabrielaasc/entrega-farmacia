@@ -1,0 +1,74 @@
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+
+#banner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+    box-sizing: border-box;
+
+    background-image:
+        linear-gradient(
+            rgba(17, 27, 69, 0.35),
+            rgba(17, 27, 69, 0.35)
+        ),
+        url("./img/farmacia.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.contenedor {
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.encabezado {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.encabezado h1 {
+    color: #24744b;
+}
+
+
+.footer {
+    margin-top: auto;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    background-color: #111b45;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 20px;
+    }
+}

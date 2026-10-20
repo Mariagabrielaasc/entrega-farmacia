@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia 24/7</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <section id="banner">
+
+        <main class="contenedor">
+            <header class="encabezado">
+                <h1>Encuentra aquí tu farmacia de turno</h1>
+                <p>Encuentra farmacias disponibles en Santiago</p>
+            </header>
+
+            <form id="formulario-busqueda">
+                <label for="comuna">Nombre de la comuna</label>
+
+                <div class="buscador">
+                    <input
+                        type="text"
+                        id="comuna"
+                        placeholder="Ejemplo: Santiago"
+                        required
+                    >
+
+                    <button type="submit" id="boton-buscar">
+                        Buscar
+                    </button>
+                </div>
+            </form>
+
+            <p id="mensaje" role="status" aria-live="polite"></p>
+
+            <section
+                id="resultados"
+                aria-label="Resultados de la búsqueda">
+            </section>
+        </main>
+
+    </section>
+
+    <footer class="footer">
+        <p>Página diseñada por María Sandoval</p>
+    </footer>
+    
+</body>
+</html>
